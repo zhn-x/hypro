@@ -1,0 +1,71 @@
+{
+    "margin-top": 5,
+    "height": 20,
+    "width": 1320,
+    "spacing": 6,
+
+    "modules-left": [
+        "backlight",
+        "pulseaudio"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "network",
+        "battery",
+        "custom/power"
+    ],
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d/%j}"
+    },
+
+    "backlight": {
+        "tooltip-format": "Brightness",
+        "format": "{icon} {percent}%",
+        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-full": "󰁹  Full",
+        "format-charging": "󰂄  {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁼", "󰁾", "󰂀", "󰁹"]
+    },
+
+    "network": {
+        "format-wifi": "󰖩  {essid}",
+        "format-ethernet": "󰈀  {essid}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "󰈀  No IP",
+        "format-disconnected": "󰖪 ",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "󰖁  Muted",
+        "format-source": "󰍬  {volume}%",
+        "format-source-muted": "󰍭",
+        "format-icons": {
+            "headphone": "󰋋",
+            "default": ["󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "custom/power": {
+        "format": "  ⦿  "  ,
+        "tooltip-format": "Log out",
+        "on-click": "wlogout"
+    }
+}
