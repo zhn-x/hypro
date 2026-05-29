@@ -4,38 +4,31 @@
     font-weight: bold;
     border-radius: 15px;
 }
-
 window#waybar {
     background-color: transparent;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
 }
-
 window#waybar.hidden {
     opacity: 0.2;
 }
-
 window#waybar.termite {
     background-color: #3F3F3F;
 }
-
 window#waybar.chromium {
     background-color: #000000;
     border: none;
 }
-
 button {
     box-shadow: inset 0 -3px transparent;
     border: none;
     border-radius: 0;
 }
-
 button:hover {
     background: inherit;
     box-shadow: inset 0 -3px #ffffff;
 }
-
 #pulseaudio:hover {
     background-color: #303030;
 }
@@ -49,6 +42,13 @@ button:hover {
     background-color: #303030;
 }
 #power-profiles-daemon.power-saver:hover {
+    background-color: #303030;
+}
+#custom-fastfetch {
+    font-size: 12px;
+    background-color: rgba(40, 40, 40, 0.6);
+}
+#custom-fastfetch:hover {
     background-color: #303030;
 }
 #clock:hover {
@@ -69,36 +69,30 @@ button:hover {
 #custom-power:hover {
     background-color: #303030;
 }
-
 #clock,
 #battery,
 #backlight,
 #network,
 #pulseaudio,
 #wireplumber,
+#custom-fastfetch,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
 }
-
 #window,
 #clock {
     background-color: rgba(40, 40, 40, 0.6);
-  
 }
-
 #battery {
     background-color: rgba(40, 40, 40, 0.6);
-
 }
-
 @keyframes blink {
     to {
         background-color: #ffffff;
         color: #000000;
     }
 }
-
 #battery.critical:not(.charging) {
     background-color: #9C1205;
     color: #000000;
@@ -108,34 +102,26 @@ button:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
 label:focus {
     background-color: rgba(40, 40, 40, 0.6);
 }
-
 #backlight {
     background-color: rgba(40, 40, 40, 0.6);
 }
-
 #network {
     background-color: rgba(40, 40, 40, 0.6);
 }
-
 #network.disconnected {
     background-color: #9C1205;
     color: #000000;
 }
-
 #pulseaudio {
     background-color: rgba(40, 40, 40, 0.6);
-   
 }
-
 #pulseaudio.muted {
     background-color: #9C1205;
     color: #000000;
 }
-
 #custom-power {
     background-color: rgba(40, 40, 40, 0.6);
 } 

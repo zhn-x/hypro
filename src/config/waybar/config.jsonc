@@ -5,6 +5,7 @@
     "spacing": 6,
 
     "modules-left": [
+        "custom/fastfetch",
         "backlight",
         "pulseaudio"
     ],
@@ -18,7 +19,13 @@
         "battery",
         "custom/power"
     ],
-
+    
+    "custom/fastfetch": {
+      "format": "",
+      "tooltip": "System Info",
+      "on-click": "kitty -o shell_integration=no-cursor -o cursor_shape=block -o cursor_blink_interval=0 -o placement_strategy=top-left -o window_padding_width=\"20 0 0 0\" --class fastfetch_popup sh -c 'printf \"\\033[?25l\" && fastfetch && while read -r -s -n 1 char; do if [ \"$char\" = \"$(printf \"\\033\")\" ]; then exit; fi; done'"
+    },
+    
     "clock": {
         "format": "{:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
