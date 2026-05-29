@@ -4,7 +4,7 @@ This is a simple, effective, and fast Hyprland dotfile configuration. It feature
 smooth animations for a fluid experience, and optimized keybindings for enhanced productivity. You can easily change the wallpaper, hyprlock, ... to suit your style.
 
 <h3>Preview</h3>
-<img src=Source/hypro-term.png>
+<img src=Public/hypro-term.png>
 
 <h4>The following projects have inspired me:</h4>
 
