@@ -61,7 +61,7 @@ hl.window_rule({ match = { class = "^nm-connection-editor$"        }, float = tr
 hl.window_rule({ match = { class = "^qt5ct$"                       }, float = true })
 hl.window_rule({ match = { class = "^qt6ct$"                       }, float = true })
 hl.window_rule({ match = { class = "^nwg-look$"                    }, float = true })
-hl.window_rule({ match = { class = "^fastfetch_popup$"             }, float = true, center = true, size = { 550, 300 } })
+hl.window_rule({ match = { class = "^fastfetch_popup$"             }, float = true, center = true, size = { 570, 300 } })
 hl.window_rule({ match = { class = "^org.kde.ark$"                 }, float = true })
 hl.window_rule({ match = { class = "^org.pulseaudio.pavucontrol$"  }, float = true })
 
