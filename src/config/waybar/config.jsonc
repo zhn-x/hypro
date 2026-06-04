@@ -71,7 +71,7 @@
     },
 
     "custom/power": {
-        "format": "  ⦿  "  ,
+        "format": "  ⌾  "  ,
         "tooltip-format": "Log out",
         "on-click": "wlogout"
     }
